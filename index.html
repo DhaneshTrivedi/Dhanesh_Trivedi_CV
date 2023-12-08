@@ -548,6 +548,19 @@
 
 	<script src="js/main.js"></script>
 
+	<script>
+		$(document).ready(function () {
+			// Add click event listener to each navigation item
+			$('.navbar-nav a').on('click', function () {
+				// Check if the navigation bar is expanded
+				if ($('.navbar-toggler').is(':visible')) {
+					// If the toggler is visible, collapse the navigation bar
+					$('.navbar-toggler').click();
+				}
+			});
+		});
+	</script>
+
 </body>
 
 </html>
